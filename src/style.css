@@ -1,0 +1,67 @@
+.grey {
+    background: grey;
+}
+.green {
+   background: green;
+}
+.brown {
+    background: brown;
+}
+body{
+    background-image: URL("./images/top-view-brown-background-photo-color-desk-wood.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+}
+
+div {display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 50px 450px 40px;
+    gap: 5px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.mainLeft {
+    grid-column: 1 / 2;
+    grid-row: 2/3;
+
+}
+
+.mainRight {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    /* background-image: URL("./images/lula-kebab-vegetablera-rice-side-view.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+  
+}
+
+
+.nav-bar {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+
+}
+
+.nav-bar {grid-column: 1 / 4;
+    grid-row: 1 / 2;
+   
+}
+
+.footer{grid-column: 1 / 4;
+    grid-row: 3 / 4;
+  
+
+}
+
+
+.logo{background: brown;
+
+}
+
+ul{background: brown;
+}
+
+ul>li{background: brown;
+}
