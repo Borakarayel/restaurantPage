@@ -1,3 +1,6 @@
+import _ from 'lodash';
+import './style.css';
+
 const content = document.getElementById("content");
 content.setAttribute("id", "IdContent");
 
@@ -6,13 +9,9 @@ const displayNav = () => {
     navbar.classList.add("brown", "nav-bar");
     content.appendChild(navbar);
 
-        const loggo = document.createElement("img");
-        loggo.setAttribute("src", "./loggo.png");
-        loggo.setAttribute("width", "45em");
-        loggo.setAttribute("height", "45em");
-        loggo.setAttribute("id", "loggo");
+        const loggo = document.createElement("div");
+        loggo.setAttribute("id", "logo");
         navbar.appendChild(loggo);
-        loggo.classList.add("logo");
 
         const navElems = document.createElement("div");
         navbar.appendChild(navElems);
@@ -33,7 +32,7 @@ const displayMenu = () => {
 
             const image0= document.createElement('img');
             image0.classList.add('image');
-            image0.setAttribute('src', './images/mercimek.jpg');
+            image0.setAttribute('id', 'image0');
             menuItem0.appendChild(image0);
 
             const text0 = document.createElement('p');
@@ -47,7 +46,7 @@ const displayMenu = () => {
 
             const image1= document.createElement('img');
             image1.classList.add('image');
-            image1.setAttribute('src', './images/lahmacun.jpg');
+            image1.setAttribute('id', 'image1');
             menuItem1.appendChild(image1);
 
             const text1 = document.createElement('p');
@@ -62,7 +61,7 @@ const displayMenu = () => {
 
             const image2= document.createElement('img');
             image2.classList.add('image');
-            image2.setAttribute('src', './images/doner.jpg');
+            image2.setAttribute('id', 'image2');
             menuItem2.appendChild(image2);
 
             const text2 = document.createElement('p');
@@ -76,7 +75,7 @@ const displayMenu = () => {
 
             const image3= document.createElement('img');
             image3.classList.add('image');
-            image3.setAttribute('src', './images/pide.jpg');
+            image3.setAttribute('id', 'image3');
             menuItem3.appendChild(image3);
 
             const text3 = document.createElement('p');
@@ -91,7 +90,7 @@ const displayMenu = () => {
             const image4= document.createElement('img');
             image4.classList.add('image');
             image4.setAttribute(
-                'src', './images/imambayildi.jpg');
+                'id', 'image4');
             menuItem4.appendChild(image4);
 
             const text4 = document.createElement('p');
@@ -106,7 +105,7 @@ const displayMenu = () => {
             const image5= document.createElement('img');
             image5.classList.add('image');
             image5.setAttribute(
-                'src', './images/baklava.jpg');
+                'id', 'image5');
             menuItem5.appendChild(image5);
 
             const text5 = document.createElement('p');
@@ -124,7 +123,7 @@ const navListeners = () => {
     }
         );
 
-    const loggo = document.getElementById("loggo");
+    const loggo = document.getElementById("logo");
     loggo.addEventListener('click', function(){
         content.removeChild(content.firstElementChild);
         content.removeChild(content.firstElementChild);
@@ -196,6 +195,7 @@ const displayHome = () => {
                 
         const mainRight = document.createElement('div');
         mainRight.classList.add("mainRight");
+        mainRight.setAttribute("id", "mainRightImg");
         main.appendChild(mainRight);          
 }
 const displayAbout = () => {
@@ -230,5 +230,4 @@ const about = () => {
     navListeners();
 }
 
-home();
-bora();
+menu();
