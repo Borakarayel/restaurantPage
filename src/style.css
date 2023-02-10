@@ -76,7 +76,6 @@ body{
                     ul li a{
                         font-size:x-large;  
                         padding: 10px;
-                 
                     }
 
         .footer{grid-column: 1 / 4;
@@ -156,7 +155,6 @@ body{
         background-repeat: no-repeat;
     }
 
-
     #image2{background: url("./images/doner.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -171,7 +169,6 @@ body{
         background-size: cover;
         background-repeat: no-repeat;
     }
-
 
     #image5{background: url("./images/baklava.jpg");
         background-size: cover;

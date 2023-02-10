@@ -16,9 +16,9 @@ const displayNav = () => {
         const navElems = document.createElement("div");
         navbar.appendChild(navElems);
         navElems.innerHTML=`<ul>
-        <li><a id="home" href="#home">Home</a></li>
-        <li><a id="menu" href="#menu">Menu</a></li>
-        <li><a id="about" href="#about">About</a></li>
+        <li><a id="home" href="#home"> Home</a></li>
+        <li><a id="menu" href="#menu"> Menu</a></li>
+        <li><a id="about" href="#about"> About</a></li>
         </ul>`
 }
 const displayMenu = () => {
